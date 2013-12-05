@@ -42,14 +42,14 @@
 			</snapshots>
 			<id>public</id>
 			<name>Public Repositories</name>
-			<url>http://epms.weitutong.cn/nexus/content/groups/public/</url>
+			<url>http://192.168.1.210:8081/nexus/content/groups/public/</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>public</id>
 			<name>Public Repositories</name>
-			<url>http://epms.weitutong.cn/nexus/content/groups/public/</url>
+			<url>http://192.168.1.210:8081/nexus/content/groups/public/</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<dependencies>
