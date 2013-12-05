@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/java/!svn/ver/28210/ID/back/navidog2Sms/trunk/navidog2Sms/WebRoot/WEB-INF/config
+END
+springMVC.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/java/!svn/ver/28187/ID/back/navidog2Sms/trunk/navidog2Sms/WebRoot/WEB-INF/config/springMVC.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/java/!svn/ver/28210/ID/back/navidog2Sms/trunk/navidog2Sms/WebRoot/WEB-INF/config/applicationContext.xml
+END
+proxoolConf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/java/!svn/ver/28196/ID/back/navidog2Sms/trunk/navidog2Sms/WebRoot/WEB-INF/config/proxoolConf.xml
+END

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<something-else-entirely>
+	<proxool>
+		<alias>tiros-db</alias>
+		<!-- <driver-url>jdbc:postgresql://192.168.1.234:5432/navidog2_member</driver-url> -->
+		<driver-url>jdbc:postgresql://finance.navidog.tv:5433/navidog2_member</driver-url>
+		<driver-class>org.postgresql.Driver</driver-class>
+
+		<driver-properties>
+			<property name="user" value="postgres" />
+			<property name="password" value="postgres" />
+		</driver-properties>
+      	
+		<!-- 每个连接最长保存时间清理 -->
+        <maximum-active-time>110000</maximum-active-time>
+        
+		<!-- 每个连接最长保存时间 -->
+		<house-keeping-sleep-time>110000</house-keeping-sleep-time>
+		
+		<!-- 连接不够时新建连接个数 -->
+		<simultaneous-build-throttle>5</simultaneous-build-throttle>
+		
+		<!--存在固定连接个数 -->
+		<prototype-count>5</prototype-count>
+		
+		<!-- 最大连接数 -->
+		<maximum-connection-count>30</maximum-connection-count>
+		
+		<!-- 最小连接数 -->
+		<minimum-connection-count>5</minimum-connection-count>
+		
+		<!-- 活动连接存在时间 -->
+		<maximum-connection-lifetime>1000000</maximum-connection-lifetime>
+		
+		<proxool.simultaneous-build-throttle>30</proxool.simultaneous-build-throttle>
+	</proxool>
+</something-else-entirely>
+

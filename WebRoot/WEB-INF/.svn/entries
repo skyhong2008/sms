@@ -1,0 +1,71 @@
+10
+
+dir
+38334
+http://192.168.1.223/svn/java/ID/back/navidog2Sms/trunk/navidog2Sms/WebRoot/WEB-INF
+http://192.168.1.223/svn/java
+
+
+
+2012-07-18T07:58:12.598023Z
+28244
+guanyq
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1C811282-2244-1016-A482-EAF991A840F3
+
+config
+dir
+
+jsp
+dir
+
+lib
+dir
+
+web.xml
+file
+
+
+
+
+2013-12-05T03:57:37.000000Z
+f192477e864c40c968e3727006c0c5a5
+2012-07-17T10:04:26.883080Z
+28197
+guanyq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2590
+

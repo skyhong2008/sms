@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans   xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	
+	<!-- 使Spring关注Annotation -->
+	<context:annotation-config />
+	
+	<!-- 启用自动扫描 -->
+	<context:component-scan base-package="cn.com.tiros.*" />
+	
+	<!-- 没有用到数据库暂时屏蔽 -->
+	<!--
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath*:config.properties</value>
+            </list>
+        </property>
+    </bean>
+ 	
+	<bean id="dataSource" lazy-init="true"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>org.logicalcobwebs.proxool.ProxoolDriver</value>
+		</property>
+		<property name="url">
+			<value>proxool.tiros-db</value>
+		</property>
+	</bean>
+	
+	<bean id="jdbcTemp" lazy-init="true" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg>
+			<ref bean="dataSource" />
+		</constructor-arg>
+	</bean>
+	
+	<bean id="txManager " lazy-init="true" class="org.springframework.jdbc.datasource.DataSourceTransactionManager ">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+	
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="execute*" />
+			<tx:method name="delete*" />
+			<tx:method name="update*" /> 
+		</tx:attributes>
+	</tx:advice>
+	
+	<aop:config>
+		<aop:pointcut id="servicePointcut" expression="execution (* cn.com.tiros.*.service.*.*(..))" />
+		<aop:advisor pointcut-ref="servicePointcut" advice-ref="txAdvice"></aop:advisor>
+	</aop:config>
+	-->
+</beans>
